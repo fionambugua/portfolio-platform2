@@ -1,8 +1,13 @@
+import Header from "../components/Header";
+import Hero from "../components/Hero";
+import Footer from "../components/Footer";
 function Home() {
   return (
-    <main>
-      <h2>Home Page</h2>
-    </main>
+    <>
+    <Header/>
+    <Hero/>
+      <Footer/>
+    </>
   );
 }
 
