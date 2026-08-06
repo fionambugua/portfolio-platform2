@@ -1,12 +1,14 @@
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Footer from "../components/Footer";
-function Home() {
+import ProjectList from "../components/ProjectList";
+function Home({projects}) {
   return (
     <>
-    <Header/>
-    <Hero/>
-      <Footer/>
+      <Header />
+      <Hero />
+      <ProjectList projects={projects} />
+      <Footer />
     </>
   );
 }
