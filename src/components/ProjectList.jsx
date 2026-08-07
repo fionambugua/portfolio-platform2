@@ -2,10 +2,12 @@ import ProjectCard from "./ProjectCard";
 
 function ProjectList({ projects }) {
     return (
-        <div className="project-list">
-           {projects.map((project) => (<ProjectCard key={project.id} project={project} />))}
-        </div>
-    )
+      <div className="project-list">
+        {projects.map((portfolioproject) => (
+          <ProjectCard key={portfolioproject.id} project={portfolioproject} />
+        ))}
+      </div>
+    );
 }
 
 export default ProjectList

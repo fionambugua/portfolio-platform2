@@ -12,18 +12,21 @@ function App() {
   const [projects, setProjects] = useState([
     {
       id: 1,
-      title: "Restaurant Website",
-      description: "A website for a local restaurant.",
+      title: "E-commerce Store",
+      description:
+        "An online shopping interface with product listings, filtering, and a shopping cart.",
     },
     {
       id: 2,
-      title: "Movie App",
-      description: "Displays trending movies.",
+      title: "Task Manager",
+      description:
+        "A productivity application that allows users to create, edit, complete, and delete tasks.",
     },
     {
       id: 3,
-      title: "Portfolio Website",
-      description: "My personal portfolio.",
+      title: "Weather Dashboard",
+      description:
+        "A React application that displays real-time weather information using a weather API.",
     },
   ]);
 
@@ -39,17 +42,17 @@ function App() {
     setProjects([...projects, newProject]);
   }
 
-  const filteredProjects = projects.filter((project) =>
-    project.title.toLowerCase().includes(search.toLowerCase()),
+  const filteredProjects = projects.filter((portfolioproject) =>
+    portfolioproject.title.toLowerCase().includes(search.toLowerCase()),
   );
 
   return (
     <div className="container">
       <Header />
       <Hero />
-      <AddProjectForm addProject={addProject} />
       <SearchBar search={search} setSearch={setSearch} />
       <ProjectList projects={filteredProjects} />
+      <AddProjectForm addProject={addProject} />
       <Footer />
     </div>
   );
