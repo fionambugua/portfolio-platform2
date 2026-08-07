@@ -1,27 +1,12 @@
-import "../styles/Header.css";
-
 function Header() {
-  return (
-    <header className="header">
-      <div className="logo">
-        <h2>MyPortfolio</h2>
-      </div>
-
-      <nav>
-        <ul className="nav-links">
-          <li>
-            <a href="/">Home</a>
-          </li>
-          <li>
-            <a href="#projects">Projects</a>
-          </li>
-          <li>
-            <a href="#add-project">Add Project</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-  );
+    return (
+      <header className="header">
+        <h1>Fiona Mbugua Portfolio</h1>
+        <p>
+          A collection of projects that showcase my skills, creativity and passion for web development.
+        </p>
+      </header>
+    );
 }
 
-export default Header;
+ export default Header;
